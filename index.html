@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Simple Calculater</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div id="calc">CALCULATOR</div>
+    <div class="mainContainer">
+      <div class="container">
+        <div class="calculator">
+          <div class="buttons">
+            <input type="text" readonly id="output" value="89" /><br />
+            <button id="clear" class="fourbtn" onclick="output.value  = null ">
+              C
+            </button>
+            <button id="ce" class="fourbtn" onclick="">CE</button>
+            <button id="modulos" class="fourbtn" onclick="output.value += '%'">
+              %
+            </button>
+            <button
+              id="devide"
+              class="fourbtn"
+              style="background-color: rgb(21, 96, 96)"
+              onclick="output.value += '/'"
+            >
+              /
+            </button>
+            <br />
+            <button id="7" class="fourbtn" onclick="output.value += '7'">
+              7
+            </button>
+            <button id="8" class="fourbtn" onclick="output.value += '8'">
+              8
+            </button>
+            <button id="9" class="fourbtn" onclick="output.value += '9'">
+              9
+            </button>
+            <button
+              id="x"
+              class="fourbtn"
+              onclick="output.value += '*'"
+              style="background-color: rgb(236, 181, 79)"
+            >
+              X
+            </button>
+            <br />
+            <button id="4" class="fourbtn" onclick="output.value += '4'">
+              4
+            </button>
+            <button id="5" class="fourbtn" onclick="output.value += '5'">
+              5
+            </button>
+            <button id="6" class="fourbtn" onclick="output.value += '6'">
+              6
+            </button>
+            <button
+              id="subatract"
+              class="fourbtn"
+              onclick="output.value += '-'"
+              style="background-color: rgb(208, 117, 165)"
+            >
+              -
+            </button>
+            <br />
+            <button id="1" class="fourbtn" onclick="output.value += '1'">
+              1
+            </button>
+            <button id="2" class="fourbtn" onclick="output.value += '2'">
+              2
+            </button>
+            <button id="3" class="fourbtn" onclick="output.value += '3'">
+              3
+            </button>
+            <button
+              id="plus"
+              class="fourbtn"
+              onclick="output.value += '+'"
+              style="background-color: rgb(38, 76, 129)"
+            >
+              +
+            </button>
+            <br />
+            <button id="empty" class="fourbtn"></button>
+            <button id="0" class="fourbtn" onclick="output.value += '0'">
+              0
+            </button>
+            <button id="empty" class="fourbtn"></button>
+            <button
+              id="equal"
+              class="fourbtn"
+              style="background-color: rgb(131, 131, 131)"
+              onclick="output.value = eval(output.value)"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
